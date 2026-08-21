@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ray-Ban Meta Smart Glasses — KERNX</title>
+<meta name="description" content="Ray-Ban Meta Smart Glasses — see more, do more. Interactive 3D model, gallery, and full specs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header is-scrolled" id="siteHeader">
+  <button class="header-menu" id="menuBtn" aria-label="Open menu">
+    <span class="menu-icon">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="menu-label">MENU</span>
+  </button>
+
+  <a href="../../index.html#top" class="header-logo" aria-label="KERNX home">
+    <img src="../../assets/02_hero_logo_KERNX.png" alt="KERNX" class="header-logo-mark">
+  </a>
+</header>
+
+<!-- ============ NAV DRAWER ============ -->
+<nav class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <ul>
+    <li><a href="../../index.html#products">AirPods</a></li>
+    <li><a href="../../index.html#products">Meta Glasses</a></li>
+    <li><a href="../../index.html#products">Accessories</a></li>
+  </ul>
+</nav>
+
+<main class="product-page-main">
+
+  <div class="product-hero">
+    <a href="../../index.html#products" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to shop
+    </a>
+
+    <div class="product-hero-eyebrow"><span class="dot"></span>SMART GLASSES · WAYFARER</div>
+    <h1>Ray-Ban Meta<br>Smart Glasses</h1>
+    <p>See more. Do more. A built-in camera, open-ear audio, and Meta AI — all inside the iconic Wayfarer silhouette.</p>
+
+    <div class="product-hero-meta">
+      <span>12MP camera</span> <span>Open-ear audio</span> <span>Meta AI built-in</span> <span>Up to 32h with case</span>
+    </div>
+  </div>
+
+  <!-- ============ 3D VIEWER ============ -->
+  <section class="viewer-section">
+    <div class="viewer-card">
+      <model-viewer
+        src="../../assets/models/meta-glasses/model.glb"
+        alt="3D model of Ray-Ban Meta Smart Glasses"
+        camera-controls
+        auto-rotate
+        auto-rotate-delay="1000"
+        rotation-per-second="16deg"
+        shadow-intensity="1"
+        exposure="1.1"
+        environment-image="neutral"
+        camera-orbit="20deg 82deg 130%"
+        field-of-view="30deg"
+        poster="../../assets/gallery/meta-glasses/01.webp"
+        loading="eager"
+        ar
+        ar-modes="webxr scene-viewer quick-look">
+        <button slot="ar-button" class="ar-button">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M3 7L12 12L21 7M12 12V22" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          View in your space
+        </button>
+      </model-viewer>
+      <div class="viewer-hint">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 12C4 12 7 5 12 5C17 5 20 12 20 12C20 12 17 19 12 19C7 19 4 12 4 12Z" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.3"/></svg>
+        Drag to rotate · Scroll to zoom
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery-section">
+    <div class="gallery-heading">GALLERY</div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="../../assets/gallery/meta-glasses/01.webp" alt="Ray-Ban Meta Smart Glasses" loading="lazy"></div> <div class="gallery-item"><img src="../../assets/gallery/meta-glasses/02.webp" alt="Ray-Ban Meta Smart Glasses" loading="lazy"></div> <div class="gallery-item"><img src="../../assets/gallery/meta-glasses/03.webp" alt="Ray-Ban Meta Smart Glasses" loading="lazy"></div> <div class="gallery-item"><img src="../../assets/gallery/meta-glasses/04.webp" alt="Ray-Ban Meta Smart Glasses" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ============ SPECS ============ -->
+  <section class="specs-section">
+    <h2>Technical specifications</h2>
+    <dl class="specs-list">
+      <div><dt>Camera</dt><dd>12MP ultra-wide</dd></div> <div><dt>Audio</dt><dd>Open-ear speakers, 5-mic array</dd></div> <div><dt>Assistant</dt><dd>Meta AI built-in</dd></div> <div><dt>Battery</dt><dd>Up to 4 hours per charge</dd></div> <div><dt>With charging case</dt><dd>Up to 32 hours total</dd></div> <div><dt>Water resistance</dt><dd>IPX4</dd></div>
+    </dl>
+  </section>
+
+  <div class="product-cta">
+    <a href="../../index.html#products" class="cta-btn">EXPLORE MORE PRODUCTS <span>→</span></a>
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="../../assets/19_kernx_logo_cutout.png" alt="" class="footer-logo-mark">
+      <span class="footer-wordmark">KERNX</span>
+      <p>Premium tech products.<br>Curated for performance<br>and style.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="../../index.html#products">AirPods</a></li>
+        <li><a href="../../index.html#products">Meta Glasses</a></li>
+        <li><a href="../../index.html#">Accessories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>COMPANY</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>FOLLOW US</h5>
+      <div class="footer-social">
+        <a href="https://t.me/kernxshop" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none"><path d="M20.5 4L2.5 11.2C2.5 11.2 1.7 11.5 1.8 12C1.9 12.5 2.4 12.7 2.4 12.7L7.2 14.3L9 20.3C9.1 20.7 9.4 20.8 9.7 20.6C9.9 20.5 10.1 20.3 10.4 20L12.7 17.8L17.3 21.2C17.3 21.2 18 21.7 18.3 20.9L21.5 5.1C21.9 4.1 21.2 3.7 20.5 4Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M7.2 14.3L16.5 8.2C16.9 7.9 17.3 8.1 17 8.4L9.8 15.2" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></a>
+        <a href="https://www.avito.ru/user/6f5077ad35479a1ea61f81a202e38bbb/profile?src=sharing" target="_blank" rel="noopener noreferrer" aria-label="Avito"><svg viewBox="0 0 24 24" fill="none"><path d="M11 3H4V10L14 20L21 13L11 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="8" cy="7" r="1.3" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2024 KERNX. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="../products.js"></script>
+</body>
+</html>

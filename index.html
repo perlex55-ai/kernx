@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>KERNX — Premium Tech Store</title>
+<meta name="description" content="KERNX. Premium tech. Without compromise. AirPods Pro 3, AirPods 4, Meta Smart Glasses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <canvas class="preloader-canvas" id="preloaderCanvas"></canvas>
+  <div class="preloader-mark">
+    <img src="assets/19_kernx_logo_cutout.png" alt="" class="preloader-k" id="preloaderK">
+    <div class="preloader-sweep" id="preloaderSweep"></div>
+  </div>
+  <div class="preloader-word" id="preloaderWord">
+    <span class="preloader-kernx">KERNX</span>
+    <span class="preloader-sub">TECHNOLOGY STORE</span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <button class="header-menu" id="menuBtn" aria-label="Open menu">
+    <span class="menu-icon">
+      <span></span><span></span><span></span>
+    </span>
+    <span class="menu-label">MENU</span>
+  </button>
+
+  <a href="#top" class="header-logo" aria-label="KERNX home">
+    <img src="assets/02_hero_logo_KERNX.png" alt="KERNX" class="header-logo-mark">
+  </a>
+</header>
+
+<!-- ============ NAV DRAWER ============ -->
+<nav class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <ul>
+    <li><a href="#products">AirPods</a></li>
+    <li><a href="#products">Meta Glasses</a></li>
+    <li><a href="#products">Accessories</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-wrap" id="heroBgWrap">
+      <canvas class="hero-particles" id="heroParticles"></canvas>
+      <img src="assets/01_hero_particle_scene_tall.png" alt="" class="hero-bg-img" id="heroBgImg">
+    </div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <!-- KERNX wordmark: assembled on load, flies apart on scroll -->
+    <div class="hero-wordmark" id="heroWordmark" aria-label="KERNX">
+      <span class="wm-letter" data-letter="K">K</span>
+      <span class="wm-letter" data-letter="E">E</span>
+      <span class="wm-letter" data-letter="R">R</span>
+      <span class="wm-letter" data-letter="N">N</span>
+      <span class="wm-letter" data-letter="X">X</span>
+    </div>
+
+    <div class="hero-scroll" id="heroScroll">
+      <span>SCROLL TO EXPLORE</span>
+      <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+    </div>
+  </section>
+
+  <!-- ============ BRAND STATEMENT ============ -->
+  <section class="brand-statement" id="brandStatement">
+    <p class="brand-statement-text">
+      <span class="line">PREMIUM TECH.</span>
+      <span class="line">WITHOUT COMPROMISE.</span>
+    </p>
+    <div class="brand-scroll-hint">
+      <span class="scroll-mouse small"><span class="scroll-dot"></span></span>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="section-heading">
+      <span class="eyebrow">OUR PRODUCTS</span>
+      <span class="eyebrow-line"></span>
+    </div>
+
+    <div class="product-grid">
+
+      <a class="product-card" href="products/airpods-pro-3/index.html" data-card="1">
+        <div class="product-card-media">
+          <img src="assets/15_airpods_pro_3_cutout_clean.png" alt="AirPods Pro 3" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <h3>AIRPODS<br>PRO 3</h3>
+          <p>Redesigned for<br>next-level sound.</p>
+        </div>
+        <span class="product-explore">EXPLORE <span>→</span></span>
+      </a>
+
+      <a class="product-card" href="products/airpods-4/index.html" data-card="2">
+        <div class="product-card-media">
+          <img src="assets/16_airpods_4_cutout_v2.png" alt="AirPods 4" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <h3>AIRPODS 4</h3>
+          <p>Iconic design.<br>All-day comfort.</p>
+        </div>
+        <span class="product-explore">EXPLORE <span>→</span></span>
+      </a>
+
+      <a class="product-card" href="products/meta-glasses/index.html" data-card="3">
+        <div class="product-card-media">
+          <img src="assets/17_meta_smart_glasses_cutout_clean.png" alt="Meta Smart Glasses" loading="lazy">
+        </div>
+        <div class="product-card-body">
+          <h3>META<br>SMART GLASSES</h3>
+          <p>See more.<br>Do more.</p>
+        </div>
+        <span class="product-explore">EXPLORE <span>→</span></span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ TRUST / BENEFITS ============ -->
+  <section class="benefits" id="benefits">
+    <div class="benefit-col" data-benefit>
+      <span class="benefit-icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M4 12H24V27H4V12Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M24 17H30.5L36 22.5V27H24V17Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="11" cy="29.5" r="3" stroke="currentColor" stroke-width="1.3"/><circle cx="29" cy="29.5" r="3" stroke="currentColor" stroke-width="1.3"/></svg>
+      </span>
+      <h4>FAST DELIVERY</h4>
+      <p>Worldwide shipping<br>in 1–3 days.</p>
+    </div>
+    <div class="benefit-col" data-benefit>
+      <span class="benefit-icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 4L34 9V19C34 27.5 28 33.8 20 36.5C12 33.8 6 27.5 6 19V9L20 4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M20 12V29M13 16.5L20 12L27 16.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <h4>OFFICIAL WARRANTY</h4>
+      <p>Full warranty on<br>all products.</p>
+    </div>
+    <div class="benefit-col" data-benefit>
+      <span class="benefit-icon" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M8 21V18C8 11.4 13.4 6 20 6C26.6 6 32 11.4 32 18V21" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><rect x="4" y="21" width="8" height="10" rx="2" stroke="currentColor" stroke-width="1.3"/><rect x="28" y="21" width="8" height="10" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M32 31C32 33.2 30 35 27.5 35H24" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      </span>
+      <h4>SUPPORT 24/7</h4>
+      <p>We're here to help<br>you anytime.</p>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="cta">
+    <div class="cta-text">
+      <h2>TECH THAT<br>MOVES WITH YOU.</h2>
+      <p>Discover the best in sound<br>and smart technology.</p>
+      <a href="#products" class="cta-btn">SHOP ALL PRODUCTS <span>→</span></a>
+    </div>
+    <div class="cta-media" id="ctaMedia">
+      <img src="assets/18_hero_earbud_cutout.png" alt="KERNX earbud" id="ctaEarbud" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/19_kernx_logo_cutout.png" alt="" class="footer-logo-mark">
+      <span class="footer-wordmark">KERNX</span>
+      <p>Premium tech products.<br>Curated for performance<br>and style.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>SHOP</h5>
+      <ul>
+        <li><a href="#products">AirPods</a></li>
+        <li><a href="#products">Meta Glasses</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>COMPANY</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>FOLLOW US</h5>
+      <div class="footer-social">
+        <a href="https://t.me/kernxshop" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none"><path d="M20.5 4L2.5 11.2C2.5 11.2 1.7 11.5 1.8 12C1.9 12.5 2.4 12.7 2.4 12.7L7.2 14.3L9 20.3C9.1 20.7 9.4 20.8 9.7 20.6C9.9 20.5 10.1 20.3 10.4 20L12.7 17.8L17.3 21.2C17.3 21.2 18 21.7 18.3 20.9L21.5 5.1C21.9 4.1 21.2 3.7 20.5 4Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M7.2 14.3L16.5 8.2C16.9 7.9 17.3 8.1 17 8.4L9.8 15.2" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></a>
+        <a href="https://www.avito.ru/user/6f5077ad35479a1ea61f81a202e38bbb/profile?src=sharing" target="_blank" rel="noopener noreferrer" aria-label="Avito"><svg viewBox="0 0 24 24" fill="none"><path d="M11 3H4V10L14 20L21 13L11 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="8" cy="7" r="1.3" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2024 KERNX. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
